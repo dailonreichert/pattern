@@ -1,9 +1,9 @@
 import {Router} from 'express';
 
-import ChapaController from './controllers/ChapaController';
+import ChapaQudradaController from './controllers/ChapaQuadradaController';
 
 const routes = Router();
 
-routes.post('/chapa',  ChapaController.calculaPeso);
+routes.post('/chapa',  ChapaQudradaController.calculaPeso);
 
 export default routes;

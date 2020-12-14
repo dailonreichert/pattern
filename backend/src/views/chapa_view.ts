@@ -1,4 +1,4 @@
-import Chapa from '../models/Chapa';
+import Chapa from '../models/ChapaQuadrada';
 
 export default {
     render(chapa: Chapa){
