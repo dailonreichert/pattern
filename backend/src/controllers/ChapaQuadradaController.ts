@@ -4,12 +4,12 @@ import Chapa from '../models/ChapaQuadrada';
 
 export default {
     async calculaPeso(request: Request, response: Response) {
-        const { espessura, largura, comprimento} = request.body;
- 
+        const { espessura, largura, comprimento} = request.params;
+
         var chapa = new Chapa();
-        chapa.setEspessura(espessura);
-        chapa.setLargura(largura);
-        chapa.setComprimento(comprimento);
+        chapa.setEspessura(Number(espessura));
+        chapa.setLargura(Number(largura));
+        chapa.setComprimento(Number(comprimento));
 
         const peso = chapa.calculaPeso();
  

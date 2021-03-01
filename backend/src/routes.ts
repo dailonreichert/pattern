@@ -4,6 +4,6 @@ import ChapaQudradaController from './controllers/ChapaQuadradaController';
 
 const routes = Router();
 
-routes.post('/chapa',  ChapaQudradaController.calculaPeso);
+routes.get('/chapa/:largura/:espessura/:comprimento',  ChapaQudradaController.calculaPeso);
 
 export default routes;

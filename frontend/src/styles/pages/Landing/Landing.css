@@ -1,0 +1,26 @@
+#main {
+  display: flex;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-110px;
+  margin-top:-40px;
+}
+
+#calc {
+    width: 200px;
+
+    background: #FFFFFF;
+    border: 1px solid #D3E2E5;
+    border-radius: 20px;
+
+    padding: 64px 80px;
+}
+
+a.teste {
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  }
