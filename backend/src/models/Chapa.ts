@@ -1,6 +1,6 @@
-import Strategy from './../interfaces/Strategy';
+import ICalculo from '../interfaces/ICalculo';
 
-class Chapa implements  Strategy{
+class Chapa implements ICalculo{
     espessura: number;
 
     setEspessura(espessura: number){
