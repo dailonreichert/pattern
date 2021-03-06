@@ -1,4 +1,3 @@
-import Observer from '../interfaces/Observer';
 import Chapa from './Chapa';
 
 class ChapaQuadrada extends Chapa{
@@ -13,8 +12,16 @@ class ChapaQuadrada extends Chapa{
       this.comprimento = comprimento;
     }
 
-    calculaPeso() {
-      return ((((this.largura * this.comprimento) / 1000000) * 7.85) * this.espessura);
+    getLargura(){
+      return this.largura;
+    }
+
+    getComprimento(){
+      return this.comprimento;
+    }
+
+    calculo() {
+      return ((((this.getLargura() * this.getComprimento()) / 1000000) * 7.85) * this.getEspessura());
     }   
 }
 
