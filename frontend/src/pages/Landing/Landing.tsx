@@ -6,10 +6,10 @@ function Landing(){
     return (
         <div id="main">
             <div id="calc">
-                <a href="/peso" className="teste">Peso</a>
+                <a href="/chaparedonda" className="teste">Chapa Redonda</a>
             </div>
-            <div id="calc">
-            <a href="/peso" className="teste">Peso</a>
+            <div id="calc1">
+                <a href="/chapaquadrada" className="teste">Chapa Quadrada</a>
             </div>
         </div>
     );

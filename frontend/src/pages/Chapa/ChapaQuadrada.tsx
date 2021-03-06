@@ -2,11 +2,11 @@ import React, { FormEvent, useState } from 'react';
 //import {FiArrowRight} from 'react-icons/fi';
 //import {Link} from 'react-router-dom';
 
-import '../../styles/pages/Peso/Peso.css';
+import '../../styles/pages/Chapa/Chapa.css';
 
 import api from '../../services/api';
 
-function Peso(){
+function ChapaQuadrada(){
     const [largura, setLargura] = useState('');
     const [espessura, setEspessura] = useState('');
     const [comprimento, setComprimento] = useState('');
@@ -15,7 +15,7 @@ function Peso(){
     function buscaCalculo(event: FormEvent){
         event.preventDefault();
 
-        api.get(`chapa/${largura}/${espessura}/${comprimento}`).then(response => {
+        api.get(`chapaquadrada/${largura}/${espessura}/${comprimento}`).then(response => {
             setPeso(response.data.peso); 
         });
     }
@@ -24,8 +24,9 @@ function Peso(){
         <>
         <div id="page-create-orphanage">
             <form onSubmit={buscaCalculo} className="create-orphanage-form">
+                <h1>Chapa Quadrada</h1>
                 <div className="input-block">
-                    <label htmlFor="largura">Largura</label>
+                    <label htmlFor="largura">Largura (mm)</label>
                     <input
                         id="largura"
                         value={largura}
@@ -33,7 +34,7 @@ function Peso(){
                     />
                 </div>
                 <div className="input-block">
-                    <label htmlFor="espessura">Espessura</label>
+                    <label htmlFor="espessura">Espessura (mm)</label>
                     <input
                         id="espessura"
                         value={espessura}
@@ -41,7 +42,7 @@ function Peso(){
                     />
                 </div>
                 <div className="input-block">
-                    <label htmlFor="comprimento">Comprimento</label>
+                    <label htmlFor="comprimento">Comprimento (mm)</label>
                     <input
                         id="comprimento"
                         value={comprimento}
@@ -56,7 +57,7 @@ function Peso(){
         <div id="page-create-orphanage">
             <form onSubmit={buscaCalculo} className="create-orphanage-form">
             <div className="input-block">
-                <label htmlFor="peso">Peso</label>
+                <label htmlFor="peso">Peso (kg)</label>
                 <input
                 id="peso"
                 value={peso}/>
@@ -67,4 +68,4 @@ function Peso(){
     );
 }
 
-export default Peso;
+export default ChapaQuadrada;
