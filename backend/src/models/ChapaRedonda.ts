@@ -1,15 +1,19 @@
-import Observer from '../interfaces/Observer';
 import Chapa from './Chapa';
 
-class ChapaRedonda extends Chapa {
-    comprimento: number;
-    diametroExt: number;
+class ChapaRedonda extends Chapa{
+    diametro: number;
 
-
-    setLargura(diametroExt: number) {
-        this.diametroExt = diametroExt;
+    setDiametro(diametro: number){
+      this.diametro = diametro;
     }
 
+    getDiamentro(){
+      return this.diametro;
+    }
+
+    calculo() {
+      return ((((((this.getDiamentro() * this.getDiamentro())*  0,62) / 100) * this.getEspessura()) / 1000));
+    }   
 }
 
 export default ChapaRedonda;

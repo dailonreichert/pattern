@@ -1,32 +1,25 @@
-import Subject from '../interfaces/Subject';
-import Observer from '../interfaces/Observer';
 
-class Chapa implements Subject{
+class Chapa {
+    
     espessura: number;
-    observers: Observer[] = [];
+    comprimento: number;
 
     setEspessura(espessura: number){
-        console.log('Chapa Quadrada: Novo valor para a espessura: ' + espessura);
         this.espessura = espessura;
-  
-        this.notifyObservers();
     }
 
-    addObserver(observer: Observer): void{
-        this.observers.push(observer);
-      }
-  
-      removeObserver(observer: Observer): void{
-        let index = this.observers.indexOf(observer);
-  
-        this.observers.splice(index, 1);
-      }
-  
-      notifyObservers(): void{
-        for(let observer of this.observers){
-          observer.update(this.espessura);
-        }
-      }
+    getEspessura(){
+        return this.espessura;
+    }
+    setComprimento(comprimento: number){
+        this.comprimento = comprimento;
+    }
+
+    getComprimento(){
+        return this.comprimento;
+    }
+
+    calculo(){}
 }
 
 export default Chapa;
