@@ -1,11 +1,10 @@
 import ChapaRedonda from './ChapaRedonda';
 
 class BarraRedonda extends ChapaRedonda {
-  pi: number = 3.14;
   comprimento: number;
 
   getPi() {
-    return this.pi;
+    return Math.PI;
   }
 
   setComprimento(comprimento: number){

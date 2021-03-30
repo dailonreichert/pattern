@@ -31,7 +31,7 @@ class PressaoInternaTubo implements IPressaoTubo {
     }
 
     calculoPressaoTubo(){
-        return (this.getPressaokgcm() * this.getDiametroExtTubo()) / (2 * (this.getTensaoadmissivelkgcm() + (this.getPressaokgcm()* 0.4))) + 1.2;
+        return (this.getPressaokgcm() * this.getDiametroExtTubo()) / (2 * (this.getTensaoadmissivelkgcm() + (this.getPressaokgcm() * 0.4))) + 1.2;
     }
 
 }
