@@ -1,10 +1,7 @@
-import IVolume from "../interfaces/IVolume";
-
-class Volume implements IVolume{
+class Volume {
     arestaA: number;
     arestaB: number;
     arestaC: number;
-    pi: number;
     raio: number;
     altura: number;
 
@@ -18,10 +15,6 @@ class Volume implements IVolume{
 
     setArestaC(arestaC: number) {
       this.arestaC = arestaC;
-    }
-
-    setPi(pi: number) {
-      this.pi = pi;
     }
 
     setRaio(raio: number) {
@@ -45,7 +38,7 @@ class Volume implements IVolume{
     }
 
     getPi() {
-      return this.pi;
+      return Math.PI;
     }
 
     getRaio() {
@@ -56,28 +49,12 @@ class Volume implements IVolume{
       return this.altura;
     }
 
-    calcularvolumecubo() {
-      return (this.getArestaA() * this.getArestaB() * this.getArestaC());
-    }
-  
-    calcularvolumeparalelepipedo() {
+    calculoVolumeCubo() {
       return (this.getArestaA() * this.getArestaB() * this.getArestaC());
     }
 
-    calcularvolumeprismabasetriangular() {
+    calculoVolumePrismaBaseTriangular() {
       ((this.getArestaA() * this.getAltura()) / 2) * this.getArestaB();
-    }
-
-    calcularvolumePiramidebasequadrada() {
-      return ((this.getArestaA() * this.getArestaB()) * this.getAltura()) / 3;
-    }
-
-    calcularvolumecilindro() {
-      return (this.getPi() * (this.getRaio() ^ 2) * this.getAltura());
-    }
-
-    calculoVolume(){
-        return (true);
     }
   }
 
