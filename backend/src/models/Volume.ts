@@ -2,7 +2,6 @@ class Volume {
     arestaA: number;
     arestaB: number;
     arestaC: number;
-    raio: number;
     altura: number;
 
     setArestaA(arestaA: number) {
@@ -15,10 +14,6 @@ class Volume {
 
     setArestaC(arestaC: number) {
       this.arestaC = arestaC;
-    }
-
-    setRaio(raio: number) {
-      this.raio = raio;
     }
 
     setAltura(altura: number) {
@@ -35,14 +30,6 @@ class Volume {
 
     getArestaC() {
       return this.arestaC;
-    }
-
-    getPi() {
-      return Math.PI;
-    }
-
-    getRaio() {
-      return this.raio;
     }
 
     getAltura() {

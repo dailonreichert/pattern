@@ -3,7 +3,7 @@ import {Request, Response} from 'express';
 import TorcaoEixoAco1045 from '../models/TorcaoEixoAco1045';
 
 export default {
-    async calculaPressao(request: Request, response: Response) {
+    async calculaTorcao(request: Request, response: Response) {
         const { potencia, rotacao} = request.params;
 
         var torcaoEixoAco1045 = new TorcaoEixoAco1045();
