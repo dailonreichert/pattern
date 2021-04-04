@@ -2,7 +2,7 @@ import React, { FormEvent, useState } from 'react';
 //import {FiArrowRight} from 'react-icons/fi';
 //import {Link} from 'react-router-dom';
 
-import '../../styles/pages/Chapa/Chapa.css';
+import '../../styles/pages/Main.css';
 
 import api from '../../services/api';
 
@@ -22,8 +22,8 @@ function PressaoInterna(){
 
     return (
         <>
-        <div id="page-create-orphanage">
-            <form onSubmit={buscaCalculo} className="create-orphanage-form">
+        <div id="page-create">
+            <form onSubmit={buscaCalculo} className="create-form">
                 <h1>Pressão Interna</h1>
                 <div className="input-block">
                     <label htmlFor="pressaokgcm">Pressão Kgcm</label>
@@ -54,8 +54,8 @@ function PressaoInterna(){
             </form>
         </div>
 
-        <div id="page-create-orphanage">
-            <form onSubmit={buscaCalculo} className="create-orphanage-form">
+        <div id="page-create">
+            <form onSubmit={buscaCalculo} className="create-form">
             <div className="input-block">
                 <label htmlFor="pressao">Pressão (kgcm)</label>
                 <input

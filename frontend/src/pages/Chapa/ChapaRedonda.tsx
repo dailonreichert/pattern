@@ -2,7 +2,7 @@ import React, { FormEvent, useState } from 'react';
 //import {FiArrowRight} from 'react-icons/fi';
 //import {Link} from 'react-router-dom';
 
-import '../../styles/pages/Chapa/Chapa.css';
+import '../../styles/pages/Main.css';
 
 import api from '../../services/api';
 
@@ -21,8 +21,8 @@ function ChapaRedonda(){
 
     return (
         <>
-        <div id="page-create-orphanage">
-            <form onSubmit={buscaCalculo} className="create-orphanage-form">
+        <div id="page-create">
+            <form onSubmit={buscaCalculo} className="create-form">
                 <h1>Chapa Redonda</h1>
                 <div className="input-block">
                     <label htmlFor="diametro">Diâmetro Externo (mm)</label>
@@ -44,8 +44,8 @@ function ChapaRedonda(){
             </form>
         </div>
 
-        <div id="page-create-orphanage">
-            <form onSubmit={buscaCalculo} className="create-orphanage-form">
+        <div id="page-create">
+            <form onSubmit={buscaCalculo} className="create-form">
             <div className="input-block">
                 <label htmlFor="peso">Peso (kg)</label>
                 <input

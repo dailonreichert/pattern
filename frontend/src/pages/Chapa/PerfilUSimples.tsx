@@ -2,7 +2,7 @@ import React, { FormEvent, useState } from 'react';
 //import {FiArrowRight} from 'react-icons/fi';
 //import {Link} from 'react-router-dom';
 
-import '../../styles/pages/Chapa/Chapa.css';
+import '../../styles/pages/Main.css';
 
 import api from '../../services/api';
 
@@ -23,8 +23,8 @@ function PerfilUSimples(){
 
     return (
         <>
-        <div id="page-create-orphanage">
-            <form onSubmit={buscaCalculo} className="create-orphanage-form">
+        <div id="page-create">
+            <form onSubmit={buscaCalculo} className="create-form">
                 <h1>Perfil U Simples</h1>
                 <div className="input-block">
                     <label htmlFor="aba">Aba (mm)</label>
@@ -63,8 +63,8 @@ function PerfilUSimples(){
             </form>
         </div>
 
-        <div id="page-create-orphanage">
-            <form onSubmit={buscaCalculo} className="create-orphanage-form">
+        <div id="page-create">
+            <form onSubmit={buscaCalculo} className="create-form">
             <div className="input-block">
                 <label htmlFor="peso">Peso (kg)</label>
                 <input
