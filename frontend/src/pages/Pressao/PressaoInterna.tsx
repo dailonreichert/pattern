@@ -34,7 +34,7 @@ function PressaoInterna(){
                     />
                 </div>
                 <div className="input-block">
-                    <label htmlFor="diametroExtTubo">Diâmetro (mm)</label>
+                    <label htmlFor="diametroExtTubo">Diâmetro Ext. (mm)</label>
                     <input
                         id="diametroExtTubo"
                         value={diametroExtTubo}
@@ -57,7 +57,7 @@ function PressaoInterna(){
         <div id="page-create">
             <form onSubmit={buscaCalculo} className="create-form">
             <div className="input-block">
-                <label htmlFor="pressao">Pressão (kgcm)</label>
+                <label htmlFor="pressao">Espessura mínima de parede para tubos de aço carbono submetidos à pressão interna</label>
                 <input
                 id="pressao"
                 value={pressao}/>
