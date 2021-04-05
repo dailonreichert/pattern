@@ -48,7 +48,7 @@ function TorcaoEixoAco1056(){
         <div id="page-create">
             <form onSubmit={buscaCalculo} className="create-form">
             <div className="input-block">
-                <label htmlFor="torcao">Torção</label>
+                <label htmlFor="torcao"> Ø mm Necessário para o Eixo  </label>
                 <input
                 id="torcao"
                 value={torcao}/>
