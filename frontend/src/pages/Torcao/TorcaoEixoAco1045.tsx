@@ -15,7 +15,7 @@ function TorcaoEixoAco1056(){
         event.preventDefault();
 
         api.get(`torcaoeixoaco/${potencia}/${rotacao}`).then(response => {
-            setTorcao(response.data.peso); 
+            setTorcao(response.data.torcao); 
         });
     }
 
