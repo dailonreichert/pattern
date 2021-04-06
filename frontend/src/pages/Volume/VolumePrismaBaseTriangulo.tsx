@@ -57,7 +57,7 @@ function VolumePrismaBaseTriangulo(){
         <div id="page-create">
             <form onSubmit={buscaCalculo} className="create-form">
             <div className="input-block">
-                <label htmlFor="volume">Volume</label>
+                <label htmlFor="volume">Volume mm³</label>
                 <input
                 id="volume"
                 value={volume}/>
