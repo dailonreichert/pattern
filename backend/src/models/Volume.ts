@@ -41,7 +41,7 @@ class Volume {
     }
 
     calculoVolumePrismaBaseTriangular() {
-      ((this.getArestaA() * this.getAltura()) / 2) * this.getArestaB();
+      return ((this.getArestaA() * this.getAltura()) / 2) * this.getArestaB();
     }
   }
 

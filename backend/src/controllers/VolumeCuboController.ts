@@ -4,12 +4,12 @@ import Volume from '../models/Volume';
 
 export default {
     async calculaVolumeCubo(request: Request, response: Response) {
-        const { arestaA, arestaB, arestaC} = request.params;
+        const { arestaa, arestab, arestac} = request.params;
 
         var volume = new Volume();
-        volume.setArestaA(Number(arestaA));
-        volume.setArestaB(Number(arestaB));
-        volume.setArestaC(Number(arestaC));
+        volume.setArestaA(Number(arestaa));
+        volume.setArestaB(Number(arestab));
+        volume.setArestaC(Number(arestac));
 
         const valor = volume.calculoVolumeCubo();
  

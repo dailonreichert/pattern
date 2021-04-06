@@ -10,13 +10,13 @@ function VolumeCubo(){
     const [arestaa, setArestaa] = useState('');
     const [arestab, setArestab] = useState('');
     const [arestac, setArestac] = useState('');
-    const [volume, setVolume] = useState('');
+    const [valor, setVolume] = useState('');
 
     function buscaCalculo(event: FormEvent){
         event.preventDefault();
 
         api.get(`volumecubo/${arestaa}/${arestab}/${arestac}`).then(response => {
-            setVolume(response.data.peso); 
+            setVolume(response.data.valor); 
         });
     }
 
@@ -59,8 +59,8 @@ function VolumeCubo(){
             <div className="input-block">
                 <label htmlFor="volume">Volume mm³</label>
                 <input
-                id="volume"
-                value={volume}/>
+                id="valor"
+                value={valor}/>
             </div>
             </form>
         </div>

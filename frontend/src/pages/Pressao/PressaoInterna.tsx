@@ -16,7 +16,7 @@ function PressaoInterna(){
         event.preventDefault();
 
         api.get(`pressaointerna/${pressaokgcm}/${diametroExtTubo}/${tensaoAdmissivelKgcm}`).then(response => {
-            setPressao(response.data.peso); 
+            setPressao(response.data.pressao); 
         });
     }
 

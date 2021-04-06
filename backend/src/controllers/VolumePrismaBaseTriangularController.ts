@@ -4,11 +4,11 @@ import Volume from '../models/Volume';
 
 export default {
     async calculaVolumePrismaBaseTriangular(request: Request, response: Response) {
-        const { arestaA, arestaB, altura} = request.params;
+        const { arestaa, arestab, altura} = request.params;
 
         var volume = new Volume();
-        volume.setArestaA(Number(arestaA));
-        volume.setArestaB(Number(arestaB));
+        volume.setArestaA(Number(arestaa));
+        volume.setArestaB(Number(arestab));
         volume.setAltura(Number(altura));
 
         const valor = volume.calculoVolumePrismaBaseTriangular();
